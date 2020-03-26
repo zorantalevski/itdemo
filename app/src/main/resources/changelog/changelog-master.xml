@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="createEventLogTable" author="Zoran.Talevski">
+        <createTable tableName="eventlog"
+                     remarks="A table to contain all events">
+            <column name="id" type="int">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="type" type="varchar(255)"/>
+            <column name="status" type="varchar(255)"/>
+<!--            with json b -->
+            <column name="raw_json" type="jsonb" />
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

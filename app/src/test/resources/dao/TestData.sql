@@ -1,0 +1,1 @@
+INSERT INTO eventlog VALUES (1,'Training','IN_PROGRESS');

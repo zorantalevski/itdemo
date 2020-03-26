@@ -1,0 +1,6 @@
+/.idea/
+/app/app.iml
+/integration-testing/integration-testing.iml
+/pg-embedded/pg-embedded.iml
+/testcontainer-pg/testcontainer-pg.iml
+/testcontainers-demo.iml

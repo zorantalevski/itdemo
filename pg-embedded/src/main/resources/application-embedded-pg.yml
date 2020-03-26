@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    port: 52055
+    url: jdbc:postgresql://localhost:${spring.datasource.port}/postgres
+    username: ENC(T7CH0cwxXoh7d/ql1Skt35Ev3Z5lB7ph)
+    password: ENC(78lhH7Rb07o07AsoCHeh916svF1rS+P6)
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        enable_lazy_load_no_trans: true
